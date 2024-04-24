@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class StringOperations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input the string
+        System.out.print("Enter a string: ");
+        String inputString = scanner.nextLine();
+
+        // Calculate and print the length of the string
+        int length = inputString.length();
+        System.out.println("Length of the string: " + length);
+
+        // Convert the string to uppercase and print
+        String upperCaseString = inputString.toUpperCase();
+        System.out.println("Uppercase version of the string: " + upperCaseString);
+
+        // Convert the string to lowercase and print
+        String lowerCaseString = inputString.toLowerCase();
+        System.out.println("Lowercase version of the string: " + lowerCaseString);
+
+        scanner.close();
+    }
+}
